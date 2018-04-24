@@ -9,8 +9,8 @@ const {
 
 const { GraphQLDate } = require('graphql-iso-date');
 
-const OrderInputType = require('../../types/order-input');
-const OrderDetailInputType = require('../../types/order-detail-input');
+const OrderInputType = require('../../src/types/order-input');
+const OrderDetailInputType = require('../../src/types/order-detail-input');
 
 describe('Order Input Type', () => {
     it('Should have customerId field of type ID', () => {

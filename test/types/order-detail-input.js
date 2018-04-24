@@ -7,7 +7,7 @@ const {
     GraphQLInt,
 } = graphql;
 
-const OrderDetailInputType = require('../../types/order-detail-input');
+const OrderDetailInputType = require('../../src/types/order-detail-input');
 
 describe('Order Detail Input Type', () => {
     it('Should have id field of type ID', () => {

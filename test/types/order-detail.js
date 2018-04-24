@@ -9,9 +9,9 @@ const {
     GraphQLFloat,
 } = graphql;
 
-const OrderDetailType = require('../../types/order-detail');
-const OrderType = require('../../types/order');
-const ProductType = require('../../types/product');
+const OrderDetailType = require('../../src/types/order-detail');
+const OrderType = require('../../src/types/order');
+const ProductType = require('../../src/types/product');
 
 describe('Order Detail Type', () => {
     it('Should have id field of type ID', () => {

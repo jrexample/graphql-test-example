@@ -8,7 +8,7 @@ const {
     GraphQLFloat,
 } = graphql;
 
-const ProductInputType = require('../../types/product-input');
+const ProductInputType = require('../../src/types/product-input');
 
 describe('Product Input Type', () => {
     it('Should have name field of type String', () => {

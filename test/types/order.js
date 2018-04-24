@@ -9,9 +9,9 @@ const {
 
 const { GraphQLDate } = require('graphql-iso-date');
 
-const OrderType = require('../../types/order');
-const OrderDetailType = require('../../types/order-detail');
-const CustomerType =require('../../types/customer');
+const OrderType = require('../../src/types/order');
+const OrderDetailType = require('../../src/types/order-detail');
+const CustomerType =require('../../src/types/customer');
 
 describe('Order Type', () => {
     it('Should have id field of type ID', () => {

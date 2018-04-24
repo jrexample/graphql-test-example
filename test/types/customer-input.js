@@ -7,7 +7,7 @@ const {
     GraphQLInt,
 } = graphql;
 
-const CustomerInputType = require('../../types/customer-input');
+const CustomerInputType = require('../../src/types/customer-input');
 
 describe('Customer Input Type', () => {
     it('Should have name field of type String', () => {

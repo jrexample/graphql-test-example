@@ -9,7 +9,7 @@ const {
     GraphQLFloat,
 } = graphql;
 
-const ProductType = require('../../types/product');
+const ProductType = require('../../src/types/product');
 
 describe('Product Type', () => {
     it('Should have id field of type ID', () => {
