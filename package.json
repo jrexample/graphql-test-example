@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --recursive",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --recursive && cat ./coverage/lcov.info | coveralls"
+  },
+  "author": "jrusly",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "graphql-iso-date": "^3.5.0",
+    "lodash": "^4.17.5",
+    "mongoose": "^5.0.14"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^1.0.0-alpha.2",
+    "mocha": "^5.1.1"
+  }
+}
