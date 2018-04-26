@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --recursive",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --recursive && cat ./coverage/lcov.info | coveralls"
+    "test": "mocha test --exit",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha test -- --exit && cat ./coverage/lcov.info | coveralls"
   },
   "author": "jrusly",
   "license": "MIT",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "chai-asserttype": "^1.0.5",
     "coveralls": "^3.0.0",
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^5.1.1"

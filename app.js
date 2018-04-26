@@ -6,10 +6,11 @@ const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 4000;
+const connectionString = 'mongodb://localhost:27017/test';
 
-mongoose.connect('mongodb://jr:jrpassword@ds153494.mlab.com:53494/jr');
+mongoose.connect(connectionString);
 mongoose.connection.once('open', () => {
-    console.log('Connected to mLab');
+    console.log('Connected to MongoDB');
 });
 
 app.use(cors());

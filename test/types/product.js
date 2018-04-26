@@ -11,28 +11,28 @@ const {
 
 const ProductType = require('../../src/types/product');
 
-describe('Product Type', () => {
-    it('Should have id field of type ID', () => {
+describe('Product Type', function () {
+    it('Should have id field of type ID', function () {
         expect(ProductType.getFields()).to.have.property('id');
         expect(ProductType.getFields().id.type).to.deep.equals(GraphQLID);
     });
 
-    it('Should have name field of type String', () => {
+    it('Should have name field of type String', function () {
         expect(ProductType.getFields()).to.have.property('name');
         expect(ProductType.getFields().name.type).to.deep.equals(GraphQLString);
     });
 
-    it('Should have quantity field of type Int', () => {
+    it('Should have quantity field of type Int', function () {
         expect(ProductType.getFields()).to.have.property('quantity');
         expect(ProductType.getFields().quantity.type).to.deep.equals(GraphQLInt);
     });
 
-    it('Should have price field of type Float', () => {
+    it('Should have price field of type Float', function () {
         expect(ProductType.getFields()).to.have.property('price');
         expect(ProductType.getFields().price.type).to.deep.equals(GraphQLFloat);
     });
 
-    it('Should have description field of type String', () => {
+    it('Should have description field of type String', function () {
         expect(ProductType.getFields()).to.have.property('description');
         expect(ProductType.getFields().description.type).to.deep.equals(GraphQLString);
     });
