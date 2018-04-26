@@ -3,7 +3,7 @@ const Customer = require('../../src/models/customer');
 function getNewData() {
     const data = {
         name: 'Jacky Rusly',
-        age: 23
+        age: 23,
     };
 
     return data;
