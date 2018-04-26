@@ -7,7 +7,6 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - docker run --name test -p 27017:27017 -d mongo
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
